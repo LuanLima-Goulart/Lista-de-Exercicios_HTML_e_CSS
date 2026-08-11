@@ -1,0 +1,17 @@
+.principal {
+    background-color: black;
+    color: red;
+    border-radius: 5px;
+}
+
+.doomslayer {
+    border-radius: 360px;
+}
+
+a:hover {
+    color: red;
+}
+
+body {
+    background-color: red;
+}
