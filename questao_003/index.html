@@ -1,11 +1,48 @@
+<!-- Exercício 3 — Card de Produto (Loja Virtual)
+Crie o card de um único produto (como se fosse de um e-commerce), contendo:
+
+Imagem do produto;
+Nome, preço e uma pequena descrição;
+Dois botões: "Adicionar ao carrinho" e "Comprar agora".
+Estilização (use Flexbox):
+
+Organize o conteúdo do card com display: flex (você escolhe se em coluna ou linha).
+Os dois botões devem ficar lado a lado, com espaçamento entre eles, usando Flexbox.
+Um botão deve ter destaque visual maior que o outro (cor mais forte, por exemplo).
+Adicione efeito de hover nos botões. -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ultimatrix</title>
+    <link rel="stylesheet" href="../questao_003/style.css">
 </head>
+
 <body>
-    
+
+    <head></head>
+    <main>
+        <div class="produto">
+            <img class="ultima" src="../questao_003/assets/kymqjvrzq7qe1.gif" alt="Ultimatrix">
+            <section class="atributos">
+                <h1><strong>Ultimatrix</strong></h1>
+                <br>
+                <p>Preço: R$ 14.990,00.</p>
+                <br>
+                <p>Descrição: A arma mais poderosa do universo, contendo 1.000.903 DNAs de aliens catalogados, você pode
+                    se
+                    transformar em qualquer um desses aliens e se divertir à beça!</p>
+            </section>
+            <section class="botao">
+                <button class="comprar">Comprar agora!!!</button>
+                <button class="carrinho">Adicionar ao carrinho</button>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
 </body>
+
 </html>

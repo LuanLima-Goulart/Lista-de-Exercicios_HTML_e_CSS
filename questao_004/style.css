@@ -1,0 +1,51 @@
+body {
+    color: white;
+    background-color: darkgreen;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ben {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    justify-items: center;
+}
+
+.nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linkdesign {
+    width: 200px;
+}
+
+.linkdesign:hover {
+    color: greenyellow;
+    background-color: green;
+    border-color: darkolivegreen;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: lime;
+}

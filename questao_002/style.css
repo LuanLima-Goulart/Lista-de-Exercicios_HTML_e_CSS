@@ -1,0 +1,35 @@
+body {
+    background-color: aquamarine;
+}
+
+.titulo {
+    color: blue;
+}
+
+.imagem {
+    background-color: lightseagreen;
+    width: 750px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloing {
+    color: purple;
+}
+
+.ingredientes {
+    background-color: skyblue;
+}
+
+.passoapasso {
+    background-color: powderblue;
+}
+
+.titulopas {
+    color: purple;
+}
+
+.rodape {
+    color: red;
+}

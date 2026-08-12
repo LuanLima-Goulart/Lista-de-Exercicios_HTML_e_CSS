@@ -1,11 +1,69 @@
+<!-- Exercício 4 — Página "Meus Links Favoritos"
+Crie uma página estilo "linktree" (aquelas páginas de link único usadas em bio de redes sociais), 
+com:
+
+Uma imagem/avatar no topo;
+Um nome/título;
+Uma lista de pelo menos 6 links (sites, redes sociais, o que quiser), cada um abrindo em nova aba.
+Estilização (use Flexbox):
+
+Cada link deve parecer um botão, ocupando a largura do "cartão" central, um embaixo do outro.
+Use display: flex com flex-direction: column para empilhar os botões com espaçamento uniforme 
+entre eles (gap).
+Cada botão deve mudar de cor de fundo no hover. -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meus Liks Favotiros</title>
+    <link rel="stylesheet" href="../questao_004/style.css">
 </head>
+
 <body>
-    
+    <header></header>
+    <main>
+        <div class="imagem">
+            <img class="ben" src="../questao_004/assets/maxresdefault.jpg" alt="Ben Tennyson">
+        </div>
+        <div class="nome">
+            <h1>Ben Tennyson</h1>
+        </div>
+        <div class="botao">
+            <button class="linkdesign"><a
+                    href="https://www.hbomax.com/br/pt/shows/ben-10-omniverse/6bac1cc5-2946-45f5-bf4c-cbe6d4d5d029?utm_source=universal_search"
+                    target="_blank">Assistir Ben 10 Omniverse</a></button>
+            <button class="linkdesign"><a
+                    href="https://www.hbomax.com/br/pt/shows/ben-10-2005/78b6fa0c-47c4-4fdf-ad77-67a407efd900?utm_source=universal_search"
+                    target="_blank">Assistir
+                    Ben 10 Clássico</a></button>
+            <button class="linkdesign"><a
+                    href="https://www.hbomax.com/br/pt/shows/ben-10-forca-alienigena/9432fc7f-94db-4047-872f-a7f8f0849a37?utm_source=universal_search"
+                    target="_blank">Assistir Ben 10 Força Alienígena</a></button>
+            <button class="linkdesign"><a
+                    href="https://www.hbomax.com/br/pt/shows/ben-10-supremacia-alienigena/603c13a1-8f6e-4a63-be02-132ef13814de?utm_source=universal_search"
+                    target="_blank">Assistir Ben 10 Supremacia Alienígena</a></button>
+            <button class="linkdesign"><a
+                    href="https://www.reddit.com/r/Ben10/comments/x53zw4/all_63_bens_aliens/?tl=pt-br"
+                    target="_blank">Todos os 63 aliens que o Ben se transformou</a></button>
+            <button class="linkdesign"><a href="https://www.youtube.com/watch?v=WJg_X34RtBA" target="_blank">Melhor
+                    música do Ben 10</a></button>
+        </div>
+        <audio id="omnitrixmp3" src="../questao_004/assets/ben10 omnitrix - RATIO KING_STUDIO (youtube).mp3"></audio>
+        <script>
+            const audio = document.getElementById('omnitrixmp3');
+            const botoes = document.querySelectorAll('.linkdesign');
+            botoes.forEach(botao => {
+                botao.addEventListener('click', () => {
+                    audio.currentTime = 0;
+                    audio.play();
+                })
+            })
+        </script>
+    </main>
+    <footer></footer>
 </body>
+
 </html>

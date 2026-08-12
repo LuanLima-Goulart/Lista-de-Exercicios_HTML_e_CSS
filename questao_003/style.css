@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.comprar {
+    color: green;
+    background-color: limegreen;
+    border-color: darkgreen;
+    width: 250px;
+    height: 100px;
+}
+
+.carrinho {
+    color: blue;
+    background-color: lightblue;
+    border-color: darkblue;
+    height: 50px;
+}
+
+.comprar:hover {
+    color: limegreen;
+    background-color: darkgreen;
+    border-color: green;
+}
+
+.carrinho:hover {
+    color: lightblue;
+    background-color: darkblue;
+    border-color: blue;
+}
+
+.produto {
+    padding: 100px;
+}
