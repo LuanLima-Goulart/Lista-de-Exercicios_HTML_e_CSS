@@ -1,0 +1,59 @@
+.planos {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.layout {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(120px);
+}
+
+.preco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+    margin-top: -200px;
+}
+
+.basic {
+    background-color: lightcoral;
+}
+
+.basic:hover {
+    background-color: darkred;
+}
+
+.pad {
+    background-color: silver;
+    width: 300px;
+    height: 150px;
+    margin-top: -20px;
+}
+
+.pad:hover {
+    background-color: darkgrey;
+}
+
+.prem {
+    background-color: gold;
+}
+
+.prem:hover {
+    background-color: darkgoldenrod;
+}

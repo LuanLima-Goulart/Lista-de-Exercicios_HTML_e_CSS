@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+.atributoCliente {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    width: 500px;
+}
+
+input:focus, select:focus, div:focus, textarea:focus{
+    outline: none;
+}
+
+.atributo {
+    color: black;
+    background-color: orange;
+    border-color: orangered;
+}
+
+#observacao {
+    max-width: 494px;
+    max-height: 250px;
+}
+
+.botoes {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.video {
+    padding: 10px;
+}
+
+.enviar {
+    background-color: limegreen;
+    color: black;
+    border-color: darkgreen;
+    width: 245px;
+    height: 50px;
+}
+
+.enviar:hover {
+    background-color: darkgreen;
+    color: limegreen;
+    border-color: green;
+}
+
+.limpar {
+    background-color: crimson;
+    color: black;
+    border-color: darkred;
+    width: 245px;
+    height: 50px;
+}
+
+.limpar:hover {
+    background-color: darkred;
+    color: crimson;
+    border-color: red;
+}

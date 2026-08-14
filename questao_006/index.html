@@ -1,11 +1,37 @@
+<!-- Exercício 6 — Galeria de Fotos 
+Crie uma galeria com pelo menos 8 imagens (temas: viagens, animais, natureza, o que preferir).
+
+Estilização (use Grid):
+
+Use display: grid para organizar as imagens em um mosaico de 4 colunas.
+Faça pelo menos uma das imagens ocupar o espaço de duas colunas ou duas linhas 
+(dica: pesquise sobre a propriedade grid-column e/ou grid-row).
+Todas as imagens devem ter o mesmo border-radius e um espaçamento (gap) uniforme entre elas. -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="../questao_006/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1><strong>Galeria</strong></h1>
+    </header>
+    <main>
+        <div class="imagem">
+            <img class="imgs mer" src="../questao_006/assets/foto1.jpeg" alt="Mordecai e Rigby">
+            <img class="imgs" src="../questao_006/assets/foto2.jpg" alt="Finn e Jake">
+            <img class="imgs" src="../questao_006/assets/foto3.jpg" alt="Homem-Aranha">
+            <img class="imgs" src="../questao_006/assets/foto4.jpg" alt="Mulher Maravilha">
+            <img class="imgs" src="../questao_006/assets/foto5.webp" alt="Rogue e Gambit">
+            <img class="imgs" src="../questao_006/assets/foto6.jpg" alt="Dio Brando">
+            <img class="imgs" src="../questao_006/assets/foto7.webp" alt="Games EduUu">
+            <img class="imgs" src="../questao_006/assets/foto8.gif" alt="BrksEdu">
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>

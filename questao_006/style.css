@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+
+.imagem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.imgs {
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.mer {
+    width: 600px;
+}

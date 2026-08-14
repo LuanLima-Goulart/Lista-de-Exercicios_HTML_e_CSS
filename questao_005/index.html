@@ -1,11 +1,61 @@
+<!-- Exercício 5 — Formulário de Cadastro de Evento
+Crie um formulário de inscrição para um evento (uma palestra, um show, o que preferir), 
+contendo pelo menos:
+
+Nome completo;
+E-mail;
+Data de nascimento;
+Um campo de seleção (select) para "Tipo de ingresso" (ex: Meia, Inteira, VIP);
+Um campo de texto longo (textarea) para "Alguma observação?";
+Dois botões: limpar e enviar.
+Estilização:
+
+Cada campo (label + input) deve ficar visualmente agrupado dentro de uma div.
+Os campos devem ter um espaçamento uniforme entre si (não use vários <br> soltos — organize com CSS).
+O formulário inteiro deve estar dentro de um "cartão" central, com largura máxima definida 
+(pesquise sobre max-width) para não esticar demais em telas largas.
+Estilize o placeholder dos campos com uma cor diferente do texto digitado. -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Evento</title>
+    <link rel="stylesheet" href="../questao_005/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1><strong>Compra de ingresso para assistir Cyberpunk 2077!</strong></h1>
+    </header>
+    <main>
+        <div class="atributoCliente">
+            <label for="nome">Nome</label>
+            <input class="atributo" id="nome" type="text" required>
+            <label for="email">E-Mail</label>
+            <input class="atributo" id="email" type="email" required>
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input class="atributo" id="dataNascimento" type="date" required>
+            <label for="tipoIngresso">Tipo de Ingresso</label>
+            <select class="atributo" id="tipoIngresso">
+                <option value="meia">Meia</option>
+                <option value="inteira">Inteira</option>
+                <option value="vip">VIP</option>
+            </select>
+            <label for="observacao">Observações</label>
+            <textarea class="atributo" id="observacao"></textarea>
+        </div>
+        <div class="botoes">
+            <button class="enviar" type="submit">Enviar</button>
+            <button class="limpar" type="reset">Limpar</button>
+        </div>
+        <div class="video">
+            <h1><strong>Trailer</strong></h1>
+            <video width="1080" height="650" controls>
+                <source src="../questao_005/assets/YTDown.com_YouTube_Um-tapa-na-gostosa-Audio-ESTOURADO_Media_ZlXRtpTaGcw_001_1080p.mp4" type="video/mp4" alt="Um Tapa">
+            </video>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>

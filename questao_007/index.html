@@ -1,11 +1,57 @@
+<!-- Exercício 7 — Tabela de Planos (Pricing Table)
+Crie uma seção com 3 "cartões" lado a lado, representando 3 planos de assinatura 
+(ex: Básico, Padrão, Premium), cada um contendo:
+
+Nome do plano;
+Preço;
+Uma lista com pelo menos 4 benefícios/recursos inclusos;
+Um botão "Assinar".
+Estilização (Flexbox):
+
+Os 3 cartões devem ficar lado a lado, com espaçamento igual entre eles.
+O cartão do meio (o plano "recomendado") deve se destacar dos outros dois: 
+maior, com borda diferente, ou "flutuando" um pouco acima dos demais 
+(dica: pesquise sobre a propriedade transform ou simplesmente ajuste a margin-top dele para negativo).
+Todos os botões devem ter o mesmo estilo, com efeito de hover. -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabela de Planos</title>
+    <link rel="stylesheet" href="../questao_007/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1><strong>Bem vindo!!!</strong></h1>
+        <h1><strong>Aqui estão os melhores planos de assinatura para você!!!</strong></h1>
+    </header>
+    <main>
+        <div class="reco">
+            <h1><strong>Recomendado!!!</strong></h1>
+            <h1>⬇️</h1>
+        </div>
+        <div class="planos">
+            <h1 class="layout basic">Básico</h1>
+            <h1 class="layout pad">Padrão</h1>
+            <h1 class="layout prem">Premium</h1>
+        </div>
+        <div class="preco">
+            <h1>R$ 9,99</h1>
+            <h1>R$ 19,99</h1>
+            <h1>R$ 29,99</h1>
+        </div>
+        <div class="recubasic">
+            <h2>Benefícios/Recursos do Básico</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>
